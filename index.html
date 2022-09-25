@@ -5,7 +5,8 @@ $email=$_POST['user_email'];
 $subject=$_POST['user_subject'];
 $msg=$_POST['user_msg'];
 $to="unusxscinan77@gmail.com";
-mail(to,subject,msg,header)
+$header="from:$email";
+mail($to,$subject,$msg,$header)
 }
 
 ?>
